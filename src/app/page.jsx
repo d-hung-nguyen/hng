@@ -1,12 +1,7 @@
+import React from "react"
+import RootLayout from "./layout"
+import Home from "@/components/Home.jsx"
 import "./globals.css"
-import react from "react"
-import { Poppins } from "next/font/google"
-
-const PoppinsFont = Poppins({
-	subsets: ["latin"],
-	weight: ["400", "500", "600", "700"],
-	style: ["normal", "italic"],
-})
 
 export const metadata = {
 	title: "Hung Nguyen - Hospitality Professional",
@@ -22,15 +17,12 @@ export const metadata = {
 	description:
 		"Dynamic and results-driven hospitality professional with over 18 years of international experience in luxury hotel sales, reservations, and revenue management across Europe, the Middle East, and Asia.",
 }
-
-export default function RootLayout({ children }) {
+export default function Page() {
 	return (
-		<html lang="en">
-			<head>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/favicon.ico" />
-			</head>
-			<body className={`${PoppinsFont.className} bg-white text-gray-900`}>{children}</body>
-		</html>
+		<RootLayout>
+			<main className={` flex min-h-screen flex-col items-center justify-between p-24`}>
+				<Home />
+			</main>
+		</RootLayout>
 	)
 }
