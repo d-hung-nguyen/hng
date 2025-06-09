@@ -24,7 +24,7 @@ export default function Home() {
 			{/* Hero Section with Parallax Background Image */}
 			<section id="about" className="relative w-full flex justify-center h-[170vh] overflow-hidden">
 				<div
-					className="absolute inset-0 w-full h-full bg-fixed bg-cover"
+					className="absolute inset-0 w-full h-full bg-fixed bg-cover sm: absolute top-0 left-50 md:left-1/2 md:-translate-x-1/2"
 					style={{ backgroundImage: "url('https://framerusercontent.com/images/uHEDEnIDgKcqezly5dfgXGDnckI.jpg')" }}></div>
 
 				<div className="absolute top-1/2 right-0 -translate-y-1 bg-white p-0 md:p-10 w-full md:w-[653px] max-w-[90%] flex flex-col gap-6 z-10 animate-fade-in">
