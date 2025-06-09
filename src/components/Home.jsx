@@ -22,12 +22,12 @@ export default function Home() {
 			</header>
 
 			{/* Hero Section with Parallax Background Image */}
-			<section className="relative w-full flex justify-center h-[170vh] overflow-hidden">
+			<section id="about" className="relative w-full flex justify-center h-[170vh] overflow-hidden">
 				<div
 					className="absolute inset-0 w-full h-full bg-fixed bg-cover"
 					style={{ backgroundImage: "url('https://framerusercontent.com/images/uHEDEnIDgKcqezly5dfgXGDnckI.jpg')" }}></div>
 
-				<div className="absolute top-1/2 right-0 -translate-y-1/2 bg-white p-6 md:p-10 w-full md:w-[653px] max-w-[90%] flex flex-col gap-6 z-10 animate-fade-in">
+				<div className="absolute top-1/2 right-0 -translate-y-1 bg-white p-6 md:p-10 w-full md:w-[653px] max-w-[90%] flex flex-col gap-6 z-10 animate-fade-in">
 					<h2 id="about" className="text-2xl md:text-3xl font-bold">
 						My Name is Hung Nguyen, a dynamic and results-driven hospitality professional.
 					</h2>
