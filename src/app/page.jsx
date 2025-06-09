@@ -20,7 +20,7 @@ export const metadata = {
 export default function Page() {
 	return (
 		<RootLayout>
-			<main className={` flex min-h-screen flex-col items-center justify-between p-24`}>
+			<main className={` flex min-h-screen flex-col items-center justify-between`}>
 				<Home />
 			</main>
 		</RootLayout>
